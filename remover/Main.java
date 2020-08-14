@@ -2,7 +2,15 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void removeOggy(ArrayList<String> names) {        
+    public static void removeOggy(ArrayList<String> names) {
+        
+        // for (int index = 0; index < names.size(); index++) { 
+        //     // accessing each element of array 
+        //     String name = names.get(index);
+        //     if(name.contains("oggy"))
+        //         names.set(index, "");
+        // }
+        
         names.removeIf(it -> it.contains("oggy"));
         return;
     }
